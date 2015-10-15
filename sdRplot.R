@@ -3,7 +3,7 @@ sdRplot<-function(nx,sl,ny,x)
 # R function that can be used for creating Semantic Differential 
 # (SD) inventory plots.  The input arguments for the function are:
 #   nx - number of levels in scale, e.g., 5
-#   sl - scale labels as a list, e.g. c("SD","D","N","A","SA")
+#   sl - scale labels as a list, e.g. c("SA","A","N","A","SA")
 #   ny - number of descriptor items in the inventory
 #   x - data matrix: 
 #              col1: low-end descriptors 
