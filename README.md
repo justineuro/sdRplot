@@ -1,4 +1,4 @@
-## sdplot.R
+## sdRplot.R
 
 An [**R**](https://svn.R-project.org/R/) function than can be used for creating ***semantic differential*** (SD) inventory plots (see https://en.wikipedia.org/wiki/Semantic_differential for more info) .
 
