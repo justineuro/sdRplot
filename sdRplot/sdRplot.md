@@ -1,4 +1,4 @@
-### sdRplot.md
+### sdRplot.R
 
 ```R
 sdRplot<-function(nx,sl,ny,x)
