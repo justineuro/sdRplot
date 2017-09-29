@@ -1,5 +1,7 @@
 ## sdRplot.R
 
+![](./sdRplot1.png)
+
 An [**R**](https://svn.R-project.org/R/) function than can be used for creating ***semantic differential*** (SD) inventory plots (see [Wikipedia: Semantic differential](https://en.wikipedia.org/wiki/Semantic_differential) for more info) .
 
 You may have to change some of the graphing parameters, as the need arises, to get better quality plots.
