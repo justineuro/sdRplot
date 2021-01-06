@@ -12,8 +12,9 @@ sdRplot<-function(nx,sl,ny,x)
 # The names of the columns (col 3 and above) of the data matrix 
 # (e.g., dimnames(x[[2]][3:ncol(x)])) are used for labelling 
 # the groups in the legend.
-# Author: Justine Leon A. Uro (justineuro.moin@gmail.com) 
-# Date: 19 October 2011
+# Author: Justine Leon A. Uro (justineuro@gmail.com)
+# Date: 19 October 2011 orig.
+#       06 January 2021 rev. to allow plotting for data on only one group (l. 60)
 #
 # Example:
 # low<-c("Serious","Slow","Useless","Tiring","Old","Hard","Long")
@@ -56,11 +57,12 @@ legend(1.25,NLAB-0.5,title="Legend:",GRPNMS,
        pch=1:NGRP,lty=1:NGRP,
        col=1:NGRP,cex=0.60
        )
-  for(i in 2:NGRP)
-  {
-    points(x[,i+2],yval,pch=i,col=i)
-    lines(x[,i+2],yval,pch=i,col=i,lty=i)
-  }     
+  if(NGRP>1){
+    for(i in 2:NGRP){
+      points(x[,i+2],yval,pch=i,col=i)
+      lines(x[,i+2],yval,pch=i,col=i,lty=i)
+    }
+  }
 axis(1,tck=1,at=c(1:NSCALE),labels=sl,cex.axis=0.60)
   for (i in 1:NLAB)
   {
@@ -71,7 +73,8 @@ axis(1,tck=1,at=c(1:NSCALE),labels=sl,cex.axis=0.60)
 #
 ##
 ###
-# Example
+# Example 1
+###
 low<-c("Serious","Slow","Useless","Tiring","Old","Hard","Long")
 high<-c("Fun","Fast","Useful","Light","New","Easy","Short")
 scale<-c("SA","A","N","A","SA")
@@ -85,4 +88,14 @@ data<-matrix(
                     c("Low","High","Grp1","Grp2","Grp3"))
    )
 sdRplot(5,scale,7,data)
+###
+# Example 2 (for grp1means only)
+###
+data1grp<-matrix(
+  cbind(low,high,grp1means),
+  nrow=7,ncol=3,byrow=FALSE,
+  dimnames=list(c("I1","I2","I3","I4","I5","I6","I7"),
+                c("Low","High","Grp1"))
+)
+sdRplot(5,scale,7,data1grp)
 #
