@@ -1,4 +1,4 @@
-sdRplot<-function(nx,sl,ny,x)
+sdRplot<-function(nx,sl,ny,x){
 #
 # R function that can be used for creating Semantic Differential 
 # (SD) inventory plots.  The input arguments for the function are:
@@ -31,7 +31,6 @@ sdRplot<-function(nx,sl,ny,x)
 #     )
 # sdRplot(5,scale,7,data)
 #
-{
 NSCALE<-nx
 NLAB<-ny
 NRW<-nrow(x)
