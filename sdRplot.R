@@ -43,7 +43,7 @@ GRPNMS<-dimnames(x)[[2]][3:NCL]
 yval<-NLAB:1
 labvaln<-x[,1]
 labvalp<-x[,2]
-# plot means of first group (only points)
+# plot means of first group (points and line, type="b")
 plot(x[,3],yval,axes=F,pch=1,col=1,type="b",
      xlab="Mean SD Scale Value",ylab="Descriptor",
      cex.lab=1.0, # size of xlab, ylab
