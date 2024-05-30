@@ -1,7 +1,7 @@
 ## sdRplot.R
 (**Note: An `R` package for this funtion is at [`sdRgraph`](https://github.com/justineuro/sdRgraph).**)  
 
-An [**R**](https://svn.R-project.org/R/) function than can be used for creating ***semantic differential*** (SD) inventory plots (see [Wikipedia: Semantic differential](https://en.wikipedia.org/wiki/Semantic_differential) for more info) .
+An [**R**](https://cran.r-project.org/) function than can be used for creating ***semantic differential*** (SD) inventory plots (see [Wikipedia: Semantic differential](https://en.wikipedia.org/wiki/Semantic_differential) for more info).  
 
 ![](./images/sdRplot1.png)
 
@@ -9,8 +9,8 @@ You may have to change some of the graphing parameters, as the need arises, to g
 
 This directory includes:
 
-* [sdRplot.R](./sdRplot.R) - the [**R**](https://svn.R-project.org/R/) script for creating SD plots (raw source at [sdRplot.R](https://raw.githubusercontent.com/justineuro/sdRplot/master/sdRplot.R))
-* [sdRplot-withExamples.R](./sdRplot-withExamples.R) - the [**R**](https://svn.R-project.org/R/) script with two examples (raw source at [sdRplot-withExamples.R](https://raw.githubusercontent.com/justineuro/sdRplot/master/sdRplot-withExamples.R))
+* [sdRplot.R](./sdRplot.R) - the [**R**](https://cran.r-project.org/) script for creating SD plots (raw source at [sdRplot.R](https://raw.githubusercontent.com/justineuro/sdRplot/master/sdRplot.R))
+* [sdRplot-withExamples.R](./sdRplot-withExamples.R) - the [**R**](https://cran.r-project.org/) script with two examples (raw source at [sdRplot-withExamples.R](https://raw.githubusercontent.com/justineuro/sdRplot/master/sdRplot-withExamples.R))
 * [sdRplot-withExamples.html](http://justineuro.github.io/sdRplot/sdRplot-withExamples.html) - a [**knitr**](http://yihui.name/knitr/)-generated output of the two examples given in the latter part of the script (HTML source at [sdRplot-withExamples.html](./sdRplot-withExamples.html)).  Note that when you source [sdRplot-withExamples.R](./sdRplot-withExamples.R) on the `R` console, only the plot from the second example (single profile) will usually appear on your graphics device unless you set your graphics device to draw two plots on one page, e.g., by using `par(mfrow=c(2,1))`.
   
   
